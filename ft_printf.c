@@ -51,6 +51,8 @@ int	ft_printf(const char	*format, ...)
 	size_t	i;
 	int		c_count;
 
+	if (!format)
+		return (-1);
 	c_count = 0;
 	va_start(ap, format);
 	i = 0;

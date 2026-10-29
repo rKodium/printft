@@ -46,5 +46,11 @@ int main (void)
 	printf("Real printf: %s\n", sn);
 	ft_printf("My print_ft: %p\n", pn);
 	printf("Real printf: %p\n", pn);
+	int pfn_imm = ft_printf(NULL);
+	int pfn_c = printf(NULL);
+	printf("::::\ncounts:\n%d\n%d\n", pfn_c, pfn_imm);
+	int pfimm2 = ft_printf("percentage at the end -> %");
+	int pfc2 = printf("percentage at the end -> p");
+	printf("::::\ncounts:\n%d\n%d\n", pfc2, pfimm2);
 	
 }
